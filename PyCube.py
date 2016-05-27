@@ -1,5 +1,5 @@
 from visual import *
-
+import CubeSound as ts
 
 scene = display(title='PyCube',
                 x=0, y=0, width=750, height=550,
@@ -55,7 +55,7 @@ for face_color, axis in faces.values():
             sticker.rotate(angle=acos(cos_angle), axis=pivot, origin=(0, 0, 0))
             stickers.append(sticker)
 
-            back = box(color=color.gray(0.25), material=materials.plastic, pos=(x, y, 1),
+            back = box(color=color.gray(0.1), material=materials.plastic, pos=(x, y, 1),
                        length=1, height=1, width=1)
             back.rotate(angle=acos(cos_angle), axis=pivot, origin=(0, 0, 0))
             stickers.append(back)
@@ -64,7 +64,9 @@ for face_color, axis in faces.values():
 make_walls()
 make_lights()
 
-fps = 15
+fps = 10
+sound = 1
+sound_toggle = True
 
 # Map keyboard to rotate respective faces.
 while True:
@@ -73,8 +75,18 @@ while True:
         face_color, axis = faces[key.lower()]
         angle = ((pi / 2) if key.isupper() else -pi / 2)
         for r in arange(0, angle, angle / fps):
-            # rate(800)
+            rate(fps*6)
             for sticker in stickers:
                 if dot(sticker.pos, axis) > 0.5:
                     sticker.rotate(angle=angle/fps, axis=axis,
                                    origin=(0, 0, 0))
+        ts.play_turn(sound)
+        if sound_toggle:
+            sound += 1
+        else:
+            sound -= 1
+        if sound == 3:
+            sound_toggle = False
+        if sound == 1:
+            sound_toggle = True
+

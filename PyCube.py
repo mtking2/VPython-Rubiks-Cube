@@ -62,8 +62,8 @@ for face_color, axis in faces.values():
             back.rotate(angle=acos(cos_angle), axis=pivot, origin=(0, 0, 0))
             stickers.append(back)
 
-
-#makeLights()
+makeWalls()
+makeLights()
 
 fps = 18
 

@@ -13,7 +13,9 @@ a neural network algorithm, that will teach itself to solve a Rubik's Cube (PyCu
 ### Dependencies
 
 This program utilizes the following Python modules:
+
 [VPython](http://vpython.org/)
+
 [PyAudio](https://people.csail.mit.edu/hubert/pyaudio/)
 
 ### Notable Mentions

@@ -37,11 +37,11 @@ def makeLights():
 
 # Map keypresses to corresponding face colors and normal vectors.
 faces = {'r': (color.red, (1, 0, 0)),
-         'o': (color.orange, (-1, 0, 0)),
-         'y': (color.yellow, (0, 1, 0)),
-         'b': ((0.2, 0.2, 0.8), (0, -1, 0)),
-         'w': (color.white, (0, 0, 1)),
-         'g': ((0.2, 0.8, 0.2), (0, 0, -1))}
+         'l': (color.orange, (-1, 0, 0)),
+         'b': (color.yellow, (0, 0, -1)),
+         'u': ((0.2, 0.2, 0.8), (0, 1, 0)),
+         'f': (color.white, (0, 0, 1)),
+         'd': ((0.2, 0.8, 0.2), (0, -1, 0))}
 
 # Create colored stickers on each face, one cubie at a time.
 stickers = []

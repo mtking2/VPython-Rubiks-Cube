@@ -9,7 +9,7 @@ VPython Rubik's Cube is an 3D interactive Rubik's Cube.
 project in which I will attempt to create another program, implementing
 a neural network algorithm, that will teach itself to solve a Rubik's Cube (PyCube).~~
 
-Neural network reserch will now be applied to my OpenGL Python Rubik's Cube.
+Neural network research will now be applied to my OpenGL Python Rubik's Cube.
 
 ### Dependencies
 

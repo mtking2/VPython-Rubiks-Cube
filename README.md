@@ -1,14 +1,15 @@
-# PyCube
+# VPython Rubik's Cube
 
 ![PyCube Gif](resources/pycube.gif)
 
-PyCube is an 3D interactive Rubik's Cube.
+VPython Rubik's Cube is an 3D interactive Rubik's Cube.
 
 ### Purpose
-This software-based Rubik's Cube will serve as a basis for a later 
+~~This software-based Rubik's Cube will serve as a basis for a later 
 project in which I will attempt to create another program, implementing
-a neural network algorithm, that will teach itself to solve a Rubik's Cube (PyCube).
+a neural network algorithm, that will teach itself to solve a Rubik's Cube (PyCube).~~
 
+Neural network reserch will now be applied to my OpenGL Python Rubik's Cube.
 
 ### Dependencies
 
